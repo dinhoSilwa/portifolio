@@ -58,26 +58,31 @@ useLayoutEffect(() => {
      ">
 
        <Project 
+       altImgDescript={"FrontEnd-fusion"}
        id={"projectOne"}
        idImg={"frontendfusion"}
          title={"Front-end Fusion"}
          description={
            "é um projeto colaborativo que visa fornecer uma oportunidade para programadores contribuírem em um projeto real de desenvolvimento de frontend. Este projeto foi concebido para permitir que cada colaborador assuma responsabilidades específicas, trabalhando em conjunto para criar um produto de alta qualidade."
          }
+         destiny={'https://github.com/dinhoSilwa/projetoFrontendFusion1'}
        />
 
       <Project
+      altImgDescript={"Fofuxos"}
       id={"projectTwo"}
       idImg={"fofuxosProject"}
          title={"Ong de adoção Pet - Fofuxos"}
          description={
            "Este site foi desenvolvido como parte de um projeto para a ONG Fofuxos, com o objetivo de proporcionar uma experiência online para a adoção de animais de estimação."
          }
+         destiny={'https://dinhosilwa.github.io/projetoOngFofuxos/'}
        />
 
 
        
 <Project
+altImgDescript={"WebappDelivery"}
   id={"projectThree"}
 idImg={"webappProjects"}
          title={"FastDelivery - webapp"}
@@ -87,22 +92,16 @@ idImg={"webappProjects"}
        />
 
 <Project 
+altImgDescript={"leve"}
   id={"projectfour"}
 idImg={"leveProjects"}
          title={"Leve - A sua Empresa de RH"}
          description={
            "Este site foi meticulosamente concebido e desenvolvido com o propósito primordial de servir como uma página de apresentação representativa e abrangente da empresa LEVE, buscando transmitir sua identidade, valores, produtos e serviços de forma eficaz e envolvente aos seus potenciais clientes e parceiros."
          }
+        
        />
 
-<Project 
-  id={"webappProjects"}
-idImg={"leveProjects"}
-         title={"DeliveryFast - webapp"}
-         description={
-           "Sistema online para efetuar pedidos, adicionar a carinho , favoritos e sistema de recebimento de pagamentos."
-         }
-       />
 
 
 

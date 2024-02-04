@@ -123,8 +123,8 @@ export const Apresentation = () => {
       <Send /> Iniciar uma conversa
      </button>
 
-     <nav className="w-1/2 effectup
-       md:relative md:top-8 md:hidden
+     <nav className="effectup
+       md:relative md:top-8 md:hidden w-[90%]
       ">
         <ApresentationIcons />
       </nav>

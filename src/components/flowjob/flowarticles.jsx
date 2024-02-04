@@ -13,19 +13,7 @@ export const Flowrticle = ({
   bg,
   className,
 }) => {
-  const [windowSize, setwindowSize] = useState(window.innerWidth);
-
-  useEffect(() => {
-    function handleResize() {
-      setwindowSize(window.innerWidth);
-    }
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+ 
 
   return (
     <article
@@ -46,12 +34,9 @@ border-2 border-[#043c8ff9] text-zinc-200 hover:bg-gradient-to-t hover:from-[#21
  "
         >
           {title}
-        </h3>{" "}
-        {window.innerWidth < 767 ? (
-          <ArrowBigDown className={`${seta}`} />
-        ) : (
-          <ArrowBigRightDash className={`${seta}`} />
-        )}{" "}
+        </h3>
+        <span className="hidden md:flex"><ArrowBigRightDash className={`${seta}`} /></span>
+        <span className=" md:hidden"><ArrowBigDown className={`${seta}`} /></span>
       </span>
 
       <p

@@ -6,169 +6,81 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef, useEffect, useState } from "react";
 
 export const MyFlow = () => {
+  
   const flowEffect = useRef(null);
+  const [windowSizeFlow, setWindowSizeFlow] = useState(0); // Inicialize com um valor padrão
 
-  const [windowSizeFlow, setwindowSizeFlow] = useState(window.innerWidth);
+  useEffect(() => {
 
-  window.addEventListener("resize", handleSizeFlow);
+    if (typeof window !== 'undefined') {
+      const handleSizeFlow = () => {
+        setWindowSizeFlow(window.innerWidth);
+      };
+      window.addEventListener("resize", handleSizeFlow);
+      return () => {
+        window.removeEventListener("resize", handleSizeFlow);
+      };
+    } else {
+      console.log('O objeto window não está disponível neste ambiente.');
+    }
+  }, []); // Executar o efeito apenas uma vez, por isso passamos um array vazio como segundo argumento
 
-  function handleSizeFlow() {
-    setwindowSizeFlow(window.innerWidth);
-  }
-
-
-    
-    useLayoutEffect(() => {
+  useLayoutEffect(() => {
+    if (typeof window !== 'undefined') {
       gsap.registerPlugin(ScrollTrigger);
-      flowEffect.current = gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: ".flowHeader",
-            scrub: true,
-            // markers : true,
-            start: "top 600px",
-            end: "bottom 700px",
-          },
-        })
-        .fromTo(".flowTitle", { y: 100, opacity: 0 }, { y: 0, opacity: 1 });
-    });
-
-
-     if(Window.innerWidth < 767){
-      useLayoutEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-        flowEffect.current = gsap
-          .timeline({
-            scrollTrigger: {
-              trigger: ".flowHeader",
-              scrub: true,
-              // markers : true,
-              start: "top 600px",
-              end: "bottom 700px",
-            },
-          })
-          .fromTo(".flowTitle", { y: 100, opacity: 0 }, { y: 0, opacity: 1 });
-          return () => {
-            window.removeEventListener("resize", handleSizeFlow);
-          };
-      });
-  
+      flowEffect.current = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".flowHeader",
+          // markers : true,
+          scrub: true,
+          start: "top 400px",
+          end: "bottom 200px",
+        },
+      }).fromTo(".flowTitle", { y: 80, opacity: 0 }, { y: 0, opacity: 1 }).fromTo(".flowSubTitle", { y: 80, opacity: 0 }, { y: 0, opacity: 1 });
+    } else {
+      console.log('O objeto window não está disponível neste ambiente.');
     }
+  }, []);
 
-
-    if(window.innerWidth < 767){
-      
-    useLayoutEffect(() => {
+  useLayoutEffect(() => {
+    if (typeof window !== 'undefined') {
       gsap.registerPlugin(ScrollTrigger);
-      flowEffect.current = gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: ".flowContainer",
-            scrub: true,
-            // markers : true,
-            start: "top 400px",
-            end: "bottom 1500px",
-          },
-        })
-        .fromTo("#flow1", { y: 50, opacity: 0 }, { y: 0, opacity: 1 })
-        .fromTo("#flow2", { y: 60, opacity: 0 }, { y: 0, opacity: 1 })
-        .fromTo("#flow3", { y: 70, opacity: 0 }, { y: 0, opacity: 1 })
-        .fromTo("#flow4", { y: 50, opacity: 0 }, { y: 0, opacity: 1 });
-
-        return () => {
-          window.removeEventListener("resize", handleSizeFlow);
-        };
-    });
-
+      flowEffect.current = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".flowContainer",
+          markers : true,
+          scrub: true,
+          start: "top 700px",
+          end: "bottom 1300px",
+        },
+      }).fromTo("#flow1", { y: 20, opacity: 0 }, { y: 0, opacity: 1 })
+        .fromTo("#flow2", { y: 20, opacity: 0 }, { y: 0, opacity: 1 })
+        .fromTo("#flow3", { y: 40, opacity: 0 }, { y: 0, opacity: 1, border : "1px solid red" })
+        .fromTo("#flow4", { y: 40, opacity: 0 }, { y: 0, opacity: 1 });
+    } else {
+      console.log('O objeto window não está disponível neste ambiente.');
     }
+  }, []);
 
-
-     if(window.innerWidth < 767){
-
-      useLayoutEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-        flowEffect.current = gsap
-          .timeline({
-            scrollTrigger: {
-              trigger: ".flowcontainertwo",
-              scrub: true,
-              // markers : true,
-              start: "top -100px",
-              end: "bottom 400px",
-            },
-          })
-          .fromTo("#flow5", { x: 100, opacity: 0 }, { x: 0, opacity: 1 })
-          .fromTo("#flow6", { y: 80, opacity: 0 }, { y: 0, opacity: 1 })
-          .fromTo("#flow7", { y: 90, opacity: 0 }, { y: 0, opacity: 1 })
-          .fromTo("#flow8", { y: 50, opacity: 0 }, { y: 0, opacity: 1 });
-  
-        return () => {
-          window.removeEventListener("resize", handleSizeFlow);
-        };
-      });
-  
+  useLayoutEffect(() => {
+    if (typeof window !== 'undefined') {
+      gsap.registerPlugin(ScrollTrigger);
+      flowEffect.current = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".flowcontainertwo",
+          // markers : true,
+          scrub: true,
+          start: "top 800px",
+          end: "bottom 800px",
+        },
+      }).fromTo("#flow5", { x: 80, opacity: 0 }, { x: 0, opacity: 1 })
+        .fromTo("#flow6", { y: 80, opacity: 0 }, { y: 0, opacity: 1 })
+        .fromTo("#flow7", { y: 90, opacity: 0 }, { y: 0, opacity: 1 })
+        .fromTo("#flow8", { y: 90, opacity: 0 }, { y: 0, opacity: 1 });
+    } else {
+      console.log('O objeto window não está disponível neste ambiente.');
     }
-
-// animaçoes para telas maiores do que 767px
-
-
-useLayoutEffect(() => {
-  gsap.registerPlugin(ScrollTrigger);
-  flowEffect.current = gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".flowHeader",
-        scrub: true,
-        // markers : true,
-        start: "top 400px",
-        end: "bottom 200px",
-      },
-    })
-    .fromTo(".flowTitle", { y: 80, opacity: 0 }, { y: 0, opacity: 1 }).fromTo(".flowSubTitle", { y: 80, opacity: 0 }, { y: 0, opacity: 1 });
-});
-
-useLayoutEffect(() => {
-  gsap.registerPlugin(ScrollTrigger);
-  flowEffect.current = gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".flowContainer",
-        scrub: true,
-        // markers : true,
-        start: "top 700px",
-        end: "bottom 800px",
-      },
-    })
-    .fromTo("#flow1", { y: 20, opacity: 0 }, { y: 0, opacity: 1 })
-    .fromTo("#flow2", { y: 20, opacity: 0 }, { y: 0, opacity: 1 })
-    .fromTo("#flow3", { y: 40, opacity: 0 }, { y: 0, opacity: 1 })
-    .fromTo("#flow4", { y: 40, opacity: 0 }, { y: 0, opacity: 1 });
-});
-
-useLayoutEffect(() => {
-  gsap.registerPlugin(ScrollTrigger);
-  flowEffect.current = gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".flowcontainertwo",
-        scrub: true,
-        // markers : true,
-        start: "top 800px",
-        end: "bottom 800px",
-      },
-    })
-    .fromTo("#flow5", { x: 80, opacity: 0 }, { x: 0, opacity: 1 })
-    .fromTo("#flow6", { y: 80, opacity: 0 }, { y: 0, opacity: 1 })
-    .fromTo("#flow7", { y: 90, opacity: 0 }, { y: 0, opacity: 1 })
-    .fromTo("#flow8", { y: 90, opacity: 0 }, { y: 0, opacity: 1 });
-
-
-});
-
-
-
-
-   
+  }, []);
 
   return (
     <section

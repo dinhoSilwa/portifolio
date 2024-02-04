@@ -5,9 +5,10 @@ export const Project = ({
  img,
  title,
  description,
- link,
+ destiny,
  idImg,
- id
+ id,
+ altImgDescript
  
 }) => {
   return (
@@ -15,7 +16,7 @@ export const Project = ({
      md:w-[42%] md:gap-0
     " id={id}>
       <figure>
-      <ImgsProjects idImg={idImg} />
+      <ImgsProjects idImg={idImg} altImgDescript={altImgDescript} />
       </figure>
 
       <header className=' px-4 py-3 flex gap-4
@@ -34,7 +35,7 @@ export const Project = ({
      </div>
      <span>
     
-      <a href={`link}`} className='flex gap-2 items-center cursor-poiter px-4 py-6 hover:text-[#0DF0FF]'>Ver Projeto <MoveRight /></a>
+      <a href={destiny} className='flex gap-2 items-center cursor-poiter px-4 py-6 hover:text-[#0DF0FF]'>Ver Projeto <MoveRight /></a>
 
       </span>
     </article>

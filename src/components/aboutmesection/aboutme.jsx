@@ -39,7 +39,7 @@ useLayoutEffect(() => {
     { y: 90 , opacity: 0 },
     { y: 0 , opacity : 1}
   ).fromTo(
-    "#btncall",
+    ".btncall",
     { y: 90 , opacity: 0 },
     { y: 0 , opacity : 1}
   );
@@ -51,7 +51,7 @@ useLayoutEffect(() => {
    " >
      <header>
      <h3 className="w-[90%] font-bold text-[24px] triggetextone">Sobre-min</h3>
-     <h2 className="w-[90%] font-bold text-[32px] triggetextone">Quem Eu sou ?</h2>
+     <h2 className="w-[90%] font-bold text-[32px] triggetextone1">Quem Eu sou ?</h2>
      </header>
      <article className="flex flex-col gap-8 text-regular text-sm font-regular text-zinc-300">
        <p className="text-[18px] triggetexttwo">

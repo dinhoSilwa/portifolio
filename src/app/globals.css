@@ -100,3 +100,9 @@ overflow: hidden;
       transform: rotate(-20deg);
   }
 }
+
+.icon-size {
+  width: 32px;
+  height: 32px;
+  font-size: 100px;
+}

@@ -34,7 +34,7 @@ export default function Home() {
     
     <div className="bg-[#000D1E]  h-full  overflow-x-hidden">
       <MainMenuSuper />
-    <div className=" md:flex md:flex-row-reverse lg:w-[80%] lg:ml-auto lg:mr-auto md:mt-20  md:mb-20">
+    <div className=" md:flex md:flex-row-reverse lg:w-[80%] lg:ml-auto lg:mr-auto md:mt-20  md:mb-20 ">
 
     <Heromain />
       <Apresentation />

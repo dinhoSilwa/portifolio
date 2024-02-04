@@ -1,7 +1,8 @@
 import img from './logomobilenav.png';
+import Image from 'next/image';
 
 export const Logomobile = () => {
   return (
-    <img src={img} alt="Logo Mobile Navigation" />
+    <Image src={img} alt="Logo Mobile Navigation" />
   );
 };

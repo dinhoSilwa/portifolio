@@ -4,16 +4,19 @@ import fofuxosProject from '@/assets/imgs/projects/fofuxos.png';
 import leveProjects from "@/assets/imgs/projects/leveRH.png"
 import webappProjects from "@/assets/imgs/projects/webapp.png"
 
-export const ImgsProjects = ({idImg}) =>{
+export const ImgsProjects = ({idImg, altImgDescript}) =>{
+
+
 
   const imgPath = {
     frontendfusion,
     fofuxosProject,
     leveProjects,
     webappProjects
+
   }
  return(
-  <Image src={imgPath[idImg]} width={"50%"} />
+  <Image src={imgPath[idImg]} width={"50%"} alt={altImgDescript} priority />
  );
 }
 

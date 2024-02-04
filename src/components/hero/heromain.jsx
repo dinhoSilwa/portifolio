@@ -8,24 +8,27 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useLayoutEffect } from "react";
 import {ApresentationIcons} from '@/components/socialicons/apresentationicons'
 
-export const Heromain = () =>{
+export const Heromain = ({
+  altImgDescript
+}) =>{
 
 
   
 
  return (
-   <header className="w-full px-12 mt-8 flex flex-col items-center gap-16 testeitem
+   <header className="w-full px-12 mt-8 flex flex-col items-center gap-12 testeitem
     md:flex md:flex-col md:justify-center
+    
    ">
 
     <figure className=" rounded-full overflow-clip w-[200px]
-    md:w-[250px]
+    md:w-[250px] border 
     ">
-    <Image src={perfil} />
+    <Image src={perfil} priority alt={"oi"}/>
 
     </figure>
 
-     <nav className="w-1/2 effectup
+     <nav className="w-1/2 effectup hidden
        md:relative md:top-8 
       ">
         <ApresentationIcons />
