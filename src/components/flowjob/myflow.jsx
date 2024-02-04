@@ -48,14 +48,14 @@ export const MyFlow = () => {
       flowEffect.current = gsap.timeline({
         scrollTrigger: {
           trigger: ".flowContainer",
-          markers : true,
+          // markers : true,
           scrub: true,
           start: "top 700px",
           end: "bottom 1300px",
         },
       }).fromTo("#flow1", { y: 20, opacity: 0 }, { y: 0, opacity: 1 })
         .fromTo("#flow2", { y: 20, opacity: 0 }, { y: 0, opacity: 1 })
-        .fromTo("#flow3", { y: 40, opacity: 0 }, { y: 0, opacity: 1, border : "1px solid red" })
+        .fromTo("#flow3", { y: 40, opacity: 0 }, { y: 0, opacity: 1 })
         .fromTo("#flow4", { y: 40, opacity: 0 }, { y: 0, opacity: 1 });
     } else {
       console.log('O objeto window não está disponível neste ambiente.');

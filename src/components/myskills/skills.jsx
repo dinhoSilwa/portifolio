@@ -73,7 +73,7 @@ export const Myskills = () => {
         <div className="flex md:gap-6 items-center justify-center skiilBlockone">
           {" "}
 
-         <div className="flex-1  flex flex-col items-center gap-3 text-center flex">
+         <div className="flex-1 flex-col items-center gap-3 text-center flex">
          <Html className={"skill"}  /> <p className=" hidden md:block w-[70%] text-[12px]">HTML: Linguagem para criar e estruturar páginas da web.</p>
           </div>
 

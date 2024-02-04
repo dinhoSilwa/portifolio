@@ -28,7 +28,7 @@ export const MainMenuSuper = () => {
       {showmenu ? <X onClick={handleMenuToggle} color={"#fff"} className="cursor-pointer close sm:hidden" size={"40px"}  /> : <Menu onClick={handleMenuToggle} color={"#fff"} className="cursor-pointer z-50 close sm:hidden" size={"40px"} />}
    
       <span className="absolute light">light</span>
-      <ul
+      <ul onClick={handleMenuToggle}
  
         className={showmenu ? 'menusuper rounded-lg bg-opacity-65 p-4 backdrop-blur-xl z-30 fixed overflow-hidden w-full h-full bg-[#040910] top-[0] left-0 flex flex-col items-center justify-center space-y-12 text-white sm:bg-red-500 sm:h-20 sm:static sm:flex md:flex ' : 'hidden md:flex md:w-[52%] md:justify-between md:items-center md:text-white 2xl:w-[50%] ' }
       > 

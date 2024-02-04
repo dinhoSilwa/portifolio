@@ -76,7 +76,7 @@ export const Apresentation = () => {
 
      
       <div className="flex mt-8 mb-10
-      md:flex gap-8 md:mt-6 md:hidden
+      gap-8 md:mt-6 md:hidden
       ">
         <span className="flex-1 effectleft
         md:text-[22px]
@@ -93,7 +93,7 @@ export const Apresentation = () => {
         md:text-[22px]
         ">
           <p className="text-[28px] font-bold 
-          md:text-[32px] font-bold
+          md:text-[32px] 
           ">+20</p>
           <p className="font-bold z-40 text-[22px]
           md:font-semibold

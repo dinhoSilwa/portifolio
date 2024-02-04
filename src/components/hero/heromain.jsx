@@ -22,7 +22,7 @@ export const Heromain = ({
    ">
 
     <figure className=" rounded-full overflow-clip w-[200px]
-    md:w-[250px] border 
+    md:w-[250px] 
     ">
     <Image src={perfil} priority alt={"oi"}/>
 
