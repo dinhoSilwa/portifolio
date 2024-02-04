@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+.light{
+background-color: transparent;
+width: 100px;
+height: 100px;
+position: absolute;
+left: -100px;
+box-shadow: 100px 300px 400px 20px #0c59ccf9;
+
+}
+
+*{
+ font-family: 'Raleway', sans-serif;
+}
+
+body{
+ background-color: #000D1E;
+}
+
+.lightApresentation{
+ width: 130px; height: 130px ;
+ border-radius: 50%;
+ box-shadow: 700px 300px 100px 60px #001b42f1;
+ left: -400px;
+
+}
+
+.lingtWorks{
+ position: absolute;
+ left:-200px;
+ width: 130px; height: 130px ;
+ border-radius: 50%;
+ box-shadow: 80px 400px 100px 100px #011634f1;
+ z-index: -99;
+
+ 
+
+}
+
+
+
+.inputwhitfocus:focus{
+ outline: none;
+}
+
+.close{
+ z-index: 999;
+}
+.artificial{
+ position: absolute;
+ left: -20vw;
+background-color: transparent;
+ width: 100px; height: 100px;
+ box-shadow: 400px 500px 160px 90px #033985f1, 700px 20px 200px 10px rgb(28, 6, 194);
+ border-radius: 50%;
+ animation: flutuar 5s ease-in-out infinite alternate; /* Aplicando a animação */
+color: #000d1e00;
+}
+
+@keyframes flutuar {
+ 0% {
+   transform: translateY(0);
+ }
+ 100% {
+   transform: translateY(-50px); /* Movendo para cima */
+ }
+}
+
+.menusuper{
+
+overflow: hidden;
+}
+
+
+.handsWave{
+  width: 5.6rem;
+  animation: wave 16s infinite;
+  
+ }
+
+ @keyframes wave {
+  0%, 100% {
+      transform: rotate(0deg);
+  }
+  20%, 60% {
+      transform: rotate(25deg);
+  }
+  40%, 80% {
+      transform: rotate(-20deg);
+  }
+}
