@@ -48,7 +48,7 @@ border-2 border-[#043c8ff9] text-zinc-200 hover:bg-gradient-to-t hover:from-[#21
       </p>
 
       <span className={`${setaProject}  md:mt-4`}>
-        <a
+        <a 
           href={`link}`}
           className={`flex gap-2 items-center cursor-poiter hover:text-[#0c59ccf9]`}
         >

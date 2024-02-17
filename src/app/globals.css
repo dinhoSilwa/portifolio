@@ -54,6 +54,10 @@ body{
  outline: none;
 }
 
+.texarea{
+  outline: none;
+}
+
 .close{
  z-index: 999;
 }
@@ -105,4 +109,16 @@ overflow: hidden;
   width: 32px;
   height: 32px;
   font-size: 100px;
+}
+
+
+input{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.likeheart{
+  fill: white
 }

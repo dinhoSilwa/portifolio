@@ -48,7 +48,7 @@ useLayoutEffect(()=>{
      <p className="md:items-center md:text-[24px] text-center itemContainer4 flex gap-2 "><MessageSquareMore color={"#00FFFF"} />Facilidade de Comunicação </p>
     
  </div>
-     <button className="px-4 btnContainer
+     <a href="#contactforms" className="px-4 btnContainer
      py-4 
      bg-yellow-500 
      text-white 
@@ -62,7 +62,7 @@ useLayoutEffect(()=>{
       border-b-8 border-yellow-600 flex items-center justify-center gap-4
      ">
       <Send /> Iniciar uma conversa
-     </button>
+     </a>
    </section>
  );
 }

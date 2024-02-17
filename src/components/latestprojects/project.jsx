@@ -1,6 +1,11 @@
-import { MoveRight } from 'lucide-react'
 
+"use client"
+
+import { MoveRight, Heart } from 'lucide-react'
+import { useState } from 'react';
 import {ImgsProjects , LogoProjects} from "@/components/latestprojects/projectsImgs";
+import { IconHeartFilled , IconHeart } from '@tabler/icons-react';
+import {Like} from './like'
 export const Project = ({
  img,
  title,
@@ -11,6 +16,9 @@ export const Project = ({
  altImgDescript
  
 }) => {
+
+
+
   return (
     <article className=" w-[95%] flex flex-col gap-4 bg-[#000F2E]
      md:w-[42%] md:gap-0
@@ -22,7 +30,7 @@ export const Project = ({
       <header className=' px-4 py-3 flex gap-4
       md:pt-6
       '>
-      <LogoProjects /> <h3 className="w-[90%] font-bold text-xl">{title}</h3>
+      <LogoProjects /> <h3 className="w-[90%] font-bold text-xl flex justify-between">{title} <Like /></h3>
       </header>
      <div className=' px-4'>
      <p className='first-letter:uppercase w-[100%] text-[16px] font-extralight  md:h-[140px] md:overflow-hidden md:overflow-ellipsis md:whitespace-wrap'>

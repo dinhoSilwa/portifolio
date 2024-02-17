@@ -21,7 +21,7 @@ export const CallToActionSecondary = () =>{
        você!
      </p>
 
-     <button className="px-4 py-8 bg-gradient-to-l flex items-center justify-center gap-4
+     <a href="#contactforms" className="px-4 py-8 bg-gradient-to-l flex items-center justify-center gap-4
       from-blue-600 via-blue-900
        to-blue-900
        rounded-md
@@ -33,7 +33,7 @@ export const CallToActionSecondary = () =>{
        shadow-lg
      ">
       <Send /> Iniciar uma conversa
-     </button>
+     </a>
 
 
    </section>

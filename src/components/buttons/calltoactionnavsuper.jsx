@@ -1,7 +1,7 @@
 
 export const CallToactionBtn = ({ btnText , id }) => {
   return (
-    <button id={id} className="grid place-content-center buttoneffect 
+    <a href="#contactforms" id={id} className="grid place-content-center buttoneffect 
      px-6 py-2 bg-gradient-to-l
       from-blue-600 via-blue-900
        to-blue-900
@@ -15,6 +15,6 @@ export const CallToactionBtn = ({ btnText , id }) => {
       
        ">
       {btnText}
-    </button>
+    </a>
   );
 };

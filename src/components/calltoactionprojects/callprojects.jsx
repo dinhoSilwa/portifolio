@@ -40,7 +40,7 @@ useLayoutEffect(()=>{
        nossos objetivos.</span> Estou animado para começarmos essa jornada juntos!
      </p>
 
-     <button
+     <a href="#contactforms"
        className="px-4 btnContainer
      py-4 
      bg-yellow-500 
@@ -56,7 +56,7 @@ useLayoutEffect(()=>{
      "
      >
        <Send /> Iniciar uma conversa
-     </button>
+     </a>
    </section>
  );
 }

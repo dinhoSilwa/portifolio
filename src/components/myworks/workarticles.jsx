@@ -28,7 +28,7 @@ border border-[#0c59ccf9] text-white hover:bg-gradient-to-t hover:from-[#212867]
    md:mb-6
  '> <h3 className='text-white font-bold text-[24px]'>{title}</h3> <ArrowBigDown className={`${seta}`}/></span>
   <p className='first-letter:uppercase text-[15px]'>{subtitle}</p>
-  <span className={`${setaProject}  md:mt-4`}><a href={`link}`} className={`flex gap-2 items-center cursor-poiter hover:text-[#0c59ccf9]`}>Ver Projeto <MoveRight /></a></span>
+  <span className={`${setaProject}  md:mt-4`}><a href="#myprojects" className={`flex gap-2 items-center cursor-poiter hover:text-[#0c59ccf9]`}>Ver Projeto <MoveRight /></a></span>
 
   </article>
  );

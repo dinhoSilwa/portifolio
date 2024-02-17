@@ -58,6 +58,7 @@ useLayoutEffect(() => {
      ">
 
        <Project 
+       likename={"front"}
        altImgDescript={"FrontEnd-fusion"}
        id={"projectOne"}
        idImg={"frontendfusion"}
@@ -69,6 +70,7 @@ useLayoutEffect(() => {
        />
 
       <Project
+      likename={"fofuxos"}
       altImgDescript={"Fofuxos"}
       id={"projectTwo"}
       idImg={"fofuxosProject"}
@@ -82,6 +84,7 @@ useLayoutEffect(() => {
 
        
 <Project
+likename={"webdelivery"}
 altImgDescript={"WebappDelivery"}
   id={"projectThree"}
 idImg={"webappProjects"}
@@ -92,6 +95,7 @@ idImg={"webappProjects"}
        />
 
 <Project 
+likename={"leve"}
 altImgDescript={"leve"}
   id={"projectfour"}
 idImg={"leveProjects"}

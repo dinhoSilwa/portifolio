@@ -74,7 +74,7 @@ useLayoutEffect(() => {
        </p>
      </article>
 
-     <button className="btncall px-4 py-8 bg-gradient-to-l flex items-center justify-center gap-4
+     <a href="#contactforms" className="btncall px-4 py-8 bg-gradient-to-l flex items-center justify-center gap-4
       from-blue-600 via-blue-900
        to-blue-900
        rounded-md
@@ -87,7 +87,7 @@ useLayoutEffect(() => {
        text-[20px]
      ">
       <Send /> Iniciar uma conversa
-     </button>
+     </a>
    </section>
  );
 }
