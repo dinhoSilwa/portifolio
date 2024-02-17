@@ -90,7 +90,7 @@ altImgDescript={"WebappDelivery"}
 idImg={"webappProjects"}
          title={"FastDelivery - webapp"}
          description={
-           "é um projeto colaborativo que visa fornecer uma oportunidade para programadores contribuírem em um projeto real de desenvolvimento de frontend. Este projeto foi concebido para permitir que cada colaborador assuma responsabilidades específicas, trabalhando em conjunto para criar um produto de alta qualidade."
+           "Este projeto é uma solução em desenvolvimento para pequenos e médios proprietários de entregas que desejam evitar as altas taxas dos serviços convencionais de entrega. Trata-se de um sistema que proporciona autonomia operacional a baixo custo."
          }
        />
 

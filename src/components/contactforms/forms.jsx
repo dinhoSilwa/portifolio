@@ -22,6 +22,7 @@ export const Form = () => {
   });
 
   const [output , setOutput] = useState("")
+  
 
   const { register, handleSubmit, formState :{errors} } = useForm({
     resolver: yupResolver(userContactSchema),
@@ -52,6 +53,7 @@ const onSubmit = async (dataForm) => {
     if (success) {
       setOutput("Dados enviados com sucesso!");
       alert("Sucesso! Em breve Entraremos em contato")
+      resetForm()
     } else {
       setOutput("Erro ao enviar os dados. Por favor, tente novamente.");
     }
@@ -66,6 +68,8 @@ const onSubmit = async (dataForm) => {
     <section id="contactforms" className="flex items-center flex-col py-12 mb-8
      md:w-[60%] md:ml-auto md:mr-auto
     " >
+
+
       <header className=" text-white p-8">
         <h2 className=" font-bold text-3xl">Me contate</h2>
       </header>
@@ -79,6 +83,7 @@ const onSubmit = async (dataForm) => {
         </label>
         <input
           type="text"
+          
           className={`inputwhitfocus p-4 bg-[#D1E5FF] rounded-xl ${errors.fullname ? 'focus:ring-2 focus:ring-red-700 ' : 'focus:ring-2 focus:ring-blue-600'}`}
 
           placeholder="Digite o seu nome"
